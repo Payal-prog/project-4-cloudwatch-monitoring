@@ -137,7 +137,13 @@ CPU utilization returned to normal levels and alarms recovered.
 
 ### CloudWatch Dashboard
 
-![CloudWatch Dashboard](screenshots/dashboard.png)
+![Dashboard](screenshots/dashboard.png)
+
+### CPU Utilization Alarm
+
+![CPU Spike](screenshots/cpu-spike1.png)
+![CPU Spike](screenshots/cpu-spike2.png)
+![CPU Spike](screenshots/cpu-spike3.png)
 
 ### ALB Unhealthy Target Alarm
 
@@ -147,12 +153,6 @@ CPU utilization returned to normal levels and alarms recovered.
 
 ![SNS Alert](screenshots/sns-email1.png)
 ![SNS Alert](screenshots/sns-email2.png)
-
-### CPU Utilization Spike
-
-![CPU Spike](screenshots/cpu-spike1.png)
-![CPU Spike](screenshots/cpu-spike2.png)
-![CPU Spike](screenshots/cpu-spike3.png)
 
 # Skills Demonstrated
 
