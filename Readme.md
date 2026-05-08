@@ -2,13 +2,13 @@
 
 ## Overview
 
-This project extends the Dockerized CI/CD AWS deployment by implementing operational monitoring, alerting, and dashboarding using Amazon CloudWatch and Amazon SNS.
+- This project extends the Dockerized CI/CD AWS deployment by implementing operational monitoring, alerting, and dashboarding using Amazon CloudWatch and Amazon SNS.
 
-The monitoring stack provides visibility into application health, backend target status, EC2 resource utilization, and infrastructure behavior behind the Application Load Balancer and Auto Scaling Group.
+- The monitoring stack provides visibility into application health, backend target status, EC2 resource utilization, and infrastructure behavior behind the Application Load Balancer and Auto Scaling Group.
 
-CloudWatch alarms were configured to detect unhealthy backend targets and high EC2 CPU utilization. SNS email notifications were integrated to simulate real-world operational alerting workflows.
+- CloudWatch alarms were configured to detect unhealthy backend targets and high EC2 CPU utilization. SNS email notifications were integrated to simulate real-world operational alerting workflows.
 
-The project also includes a CloudWatch dashboard to visualize ALB traffic, target health, EC2 performance metrics, and infrastructure status in a centralized monitoring view.
+- The project also includes a CloudWatch dashboard to visualize ALB traffic, target health, EC2 performance metrics, and infrastructure status in a centralized monitoring view.
 
 ## Monitoring Architecture
 
@@ -28,9 +28,6 @@ Email Alerts
 ---
 # Monitored Components
 
-Add:
-
-```markdown id="njlwm5"
 ## Monitored Components
 
 | Component | Metric | Purpose |
@@ -40,7 +37,7 @@ Add:
 | Target Group | UnHealthyHostCount | Detect unhealthy targets |
 | EC2 Instances | CPUUtilization | Detect high CPU usage |
 | Auto Scaling Group | Instance Health | Monitor backend infrastructure |
-```
+
 ## CloudWatch Alarms
 
 ### 1. ALB Unhealthy Target Alarm
@@ -58,15 +55,10 @@ Add:
 - Trigger Condition: CPUUtilization > 70%
 - Action: Sends SNS email notification through the configured alert topic.
 ```
-
-
 ---
 
-# Section 5 — SNS Integration
+# SNS Integration
 
-Add:
-
-```markdown id="fjlwm7"
 ## SNS Notification Integration
 
 Amazon SNS was configured to send email alerts when CloudWatch alarms entered the ALARM state.
@@ -80,11 +72,8 @@ Alert Types:
 ```
 ---
 
-# Section 6 — CloudWatch Dashboard
+# CloudWatch Dashboard
 
-Add:
-
-```markdown id="8jlwm8"
 ## CloudWatch Dashboard
 
 A centralized CloudWatch dashboard was created to visualize infrastructure and application health metrics in real time.
@@ -98,8 +87,9 @@ Dashboard Widgets:
 - Target Response Time
 
 The dashboard provides operational visibility into application availability, infrastructure health, and backend performance behavior.
-```
-## Section 7 - Failure Simulation and Alert Validation
+
+---
+## Failure Simulation and Alert Validation
 
 To validate the monitoring configuration, controlled failure simulations were performed.
 
@@ -142,18 +132,12 @@ pkill yes
 ```
 CPU utilization returned to normal levels and alarms recovered.
 
-
 ---
-
-# Section 8 — Screenshots
-
-Add:
-```markdown id="7jlwm0"
-## Screenshots
+# Screenshots
 
 ### CloudWatch Dashboard
 
-![CloudWatch Dashboard](screenshots/CloudWatch-dashboard.png)
+![CloudWatch Dashboard](screenshots/CloudWatchDashboard.png)
 
 ### ALB Unhealthy Target Alarm
 
@@ -169,9 +153,8 @@ Add:
 ![CPU Spike](screenshots/cpu-spike1.png)
 ![CPU Spike](screenshots/cpu-spike2.png)
 ![CPU Spike](screenshots/cpu-spike3.png)
-```
 
-## Section 9 — Skills Demonstrated
+# Skills Demonstrated
 
 - Amazon CloudWatch
 - CloudWatch Alarms
@@ -187,7 +170,8 @@ Add:
 - Dashboarding
 - Alerting Workflows
 
-## Section 10 — Lessons Learned
+---
+# Lessons Learned
 
 - CloudWatch metrics can be monitored at multiple dimensions including ALB, Target Group, and Availability Zone.
 - CloudWatch alarms can proactively detect infrastructure and application failures.
