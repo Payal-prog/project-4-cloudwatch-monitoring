@@ -137,7 +137,7 @@ CPU utilization returned to normal levels and alarms recovered.
 
 ### CloudWatch Dashboard
 
-![CloudWatch Dashboard](screenshots/CloudWatchDashboard.png)
+![CloudWatch Dashboard](screenshots/cloudwatch-dashboard.png)
 
 ### ALB Unhealthy Target Alarm
 
