@@ -25,11 +25,8 @@ SNS Notifications
         ↓
 Email Alerts
 ```
-
-
 ---
-
-# Section 3 — Monitored Components
+# Monitored Components
 
 Add:
 
@@ -43,7 +40,7 @@ Add:
 | Target Group | UnHealthyHostCount | Detect unhealthy targets |
 | EC2 Instances | CPUUtilization | Detect high CPU usage |
 | Auto Scaling Group | Instance Health | Monitor backend infrastructure |
-
+```
 ## CloudWatch Alarms
 
 ### 1. ALB Unhealthy Target Alarm
